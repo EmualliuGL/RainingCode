@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-size: 13px;
+    user-select: none;
+}
+p {
+    color: green;
+    background-color: transparent;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    line-break: anywhere;
+    line-height: 100%;
+    width: 13px;
+    white-space: pre;
+    position: fixed;
+    overflow: hidden;
+    filter:blur(1px);
+}
+span {
+    display: inline-block;
+    width: 13px;
+    height: 15px;
+    background-color: black;
+}
+.lastVisible {
+    color: white;
+    animation: color 0.2s forwards;
+}
+.ended {
+    animation: opacity 0.2s forwards;
+}
+@keyframes opacity {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+@keyframes color {
+    0% {
+        color: white;
+    }
+    100% {
+        color: green;
+    }
+}
